@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mobileui/style.css">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="utf-8">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<title>Apache Cordova</title>
+</head>
+
+
+<body class="padding blue-50 has-header has-sub-header">
+	<div class="header blue">
+		<h1>Profile</h1>
+	</div>
+		<div class="header blue sub shadow tab">
+		<button class="icon ion-android-person active"
+				onclick="openTab('tabWelcome')">
+			Welcome
+		</button>
+		<button class="icon ion-android-chat"
+				onclick="openTab('tabHome')">
+			Home
+		</button>
+		<button class="icon ion-android-list"
+				onclick="openTab('tabAbout')">
+			About
+		</button>
+	</div>
+	<div class="tab-content active" id="tabWelcome">
+		<h2 class="text-strong padding text-blue">Tab Welcome</h2>
+		<p>
+			Welcome !
+		</p>
+	</div>
+	<div class="tab-content" id="tabAbout">
+		<h2 class="text-strong padding text-blue">Tab About</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+			nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+			nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+			officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<div class="tab-content" id="tabHome">
+		<div class="padding border-grey-400 shadow radius white" style="margin-top: 20px">
+			<button class="small icon ion-grid white"></button>
+			<button class="small icon ion-navicon-round white text-grey-400"></button>
+			<button class="small icon ion-ios-location white text-grey-400"></button>
+			<div class="right">
+				<button class="small white text-grey-400">Last updated</button>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="list shadow radius white">
+			<div class="item">
+				<div class="left">
+					<img class="avatar circle" src="/img/lucas.cheminade.jpg">
+				</div>
+				<h2>Lucas Cheminade</h2>
+				<p>lucas.cheminade@epitech.eu</p>
+				<p class="text-grey-500 text-small">
+					<i class="icon ion-ios-location"></i> France - Strasbourg
+				</p>
+			</div>
+			<div class="item full">
+				<img src="/img/ena.jpg">
+			</div>
+			<div class="item text-grey-600">
+				Public Price - ENA Hackathon
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="mobileui/mobileui.js"></script>
+	<script type="text/javascript" src="js/tabs.js"></script>
+</body>
+</html>
